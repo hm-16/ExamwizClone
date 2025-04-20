@@ -12,7 +12,34 @@ import java.util.Set;
 
 @Entity
 public class Quiz {
+	// dead enum
+	//begin
+	enum Options{
+		ONE(1),
+	    TWO(2),
+	    THREE(3),
+	    FOUR(4);
+		private final int value;
 
+	    Options(int value) {
+	        this.value = value;
+	    }
+
+	    public int getValue() {
+	        return value;
+	    }
+	}
+	//end
+	
+	//unused inner class
+	//begin
+	public class innerClass{
+		private int a;
+		public innerClass(int x) {
+			this.a = x;
+		}
+	}
+	//end
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -85,7 +112,7 @@ public class Quiz {
         return maxMarks;
     }
 
-    public void setMaxMarks(String maxMarks) {
+    public void setMaxMarks(String maxMarks,int marks){ //unused parameter 'marks'
         this.maxMarks = maxMarks;
     }
 
@@ -126,4 +153,11 @@ public class Quiz {
         this.noOfQuestions = noOfQuestions;
         this.category = category;
     }
+    
+    //unused constructor
+    //begin
+    public Quiz(String abc) {
+    	this.noOfQuestions = abc;
+    }
+    //end
 }

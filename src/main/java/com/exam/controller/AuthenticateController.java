@@ -22,7 +22,9 @@ import java.security.Principal;
 @CrossOrigin("*")
 public class AuthenticateController {
 
-
+	//field added for dead code detection
+	public int id;
+	
     @Autowired
     private AuthenticationManager authenticationManager;
 

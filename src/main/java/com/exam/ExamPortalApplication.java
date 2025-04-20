@@ -46,4 +46,9 @@ public class ExamPortalApplication implements CommandLineRunner {
 //        User user1 = this.userService.createUser(user,userRoleSet);
 //        System.out.println(user1);
     }
+    
+    // method added for dead code detection
+    public void hello() {
+    	System.out.println("Hello , I'm a dead code!");
+    }
 }
