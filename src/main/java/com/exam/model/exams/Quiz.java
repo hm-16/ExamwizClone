@@ -113,7 +113,49 @@ public class Quiz {
     }
 
     public void setMaxMarks(String maxMarks,int marks){ //unused parameter 'marks'
-        this.maxMarks = maxMarks;
+        //unused local variables
+
+        // Primitive types
+        byte b = 1;
+        short s = 2;
+        int i = 10;
+        long l = 1000L;
+        float f = 3.14f;
+        double d = 10.10;
+        char c = 'A';
+        boolean bool = true;
+
+        // Wrapper classes
+        Byte bw = 1;
+        Short sw = 2;
+        Integer iw = 100;
+        Long lw = 1000L;
+        Float fw = 3.14f;
+        Double dw = 20.20;
+        Character cw = 'Z';
+        Boolean boolw = false;
+
+        // String
+        String str = "Hello";
+
+        // Arrays
+        int[] intArray = {1, 2, 3};
+        long[] longArray = {100L, 200L};
+        double[] doubleArray = {1.1, 2.2};
+        char[] charArray = {'a', 'b'};
+        boolean[] boolArray = {true, false};
+        String[] stringArray = {"abc", "def"};
+
+        // Object references
+        Object obj = new Object();
+        Quiz ref = new Quiz();
+
+        // Collections
+        java.util.List<Integer> list = new java.util.ArrayList<>();
+        java.util.Map<String, Integer> map = new java.util.HashMap<>();
+        java.util.Set<String> set = new java.util.HashSet<>();
+    	
+    	this.maxMarks = maxMarks;
     }
 
     public String getNoOfQuestions() {
