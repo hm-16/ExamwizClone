@@ -33,7 +33,7 @@ public class Quiz {
 	
 	//unused inner class
 	//begin
-	public class innerClass{
+	private class innerClass{
 		private int a;
 		public innerClass(int x) {
 			this.a = x;
@@ -156,7 +156,7 @@ public class Quiz {
     
     //unused constructor
     //begin
-    public Quiz(String abc) {
+    private Quiz(String abc) {
     	this.noOfQuestions = abc;
     }
     //end

@@ -15,7 +15,12 @@ import java.util.Set;
 
 @SpringBootApplication
 public class ExamPortalApplication implements CommandLineRunner {
-
+	//unused fields
+	public String publicUnusedField;
+	private String privateUnusedField;
+	final String finalUnusedField = "Final Unused Field";
+	protected String protectedUnusedField;
+	
     public static void main(String[] args) {
         SpringApplication.run(ExamPortalApplication.class, args);
     }
@@ -47,8 +52,17 @@ public class ExamPortalApplication implements CommandLineRunner {
 //        System.out.println(user1);
     }
     
-    // method added for dead code detection
-    public void hello() {
+    // methods added for dead code detection
+    public void publicUnusedMethod() {
+    	System.out.println("Hello , I'm a dead code!");
+    }
+    private void privateUnusedMethod() {
+    	System.out.println("Hello , I'm a dead code!");
+    }
+    final void finalUnusedMethods() {
+    	System.out.println("Hello , I'm a dead code!");
+    }
+    protected void protectedUnusedMethod() {
     	System.out.println("Hello , I'm a dead code!");
     }
 }
